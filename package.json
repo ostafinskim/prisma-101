@@ -2,9 +2,9 @@
   "name": "prisma-101",
   "version": "1.0.0",
   "description": "This is a PrismaORM 101 ulitmate guide",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev --respawn --transpile-only server.ts"
   },
   "author": "ostafinskim",
   "license": "MIT",
