@@ -1,0 +1,13 @@
+# use Docker to locally host Postgres and pgAdmin
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    ports:
+      - "6500:5432"
+    env_file:
+      - ./.env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  volumes:
+    postgres:
